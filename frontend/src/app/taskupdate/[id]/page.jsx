@@ -49,7 +49,7 @@ const page = () => {
     useEffect(()=>{
       
         const fetchData=async()=>{
-            const response=await fetch(`https://taskmanager-api-umd5.onrender.com/api/tasks/taskdata/${taskID}`)
+            const response=await fetch(`http://localhost:5000/api/tasks/taskdata/${taskID}`)
             if(response){
                 const data = await response.json();
                 settaskData([...taskData,data.task])
