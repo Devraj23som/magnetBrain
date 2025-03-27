@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+    { "source": "/(.*)", "destination": "/" },
+    {
+      "source": "/taskdetail/:id",
+      "destination": "/taskdetail/[id]"
+  },{
+    "source": "/taskupdate/:id",
+    "destination": "/taskupdate/[id]"
+}
+  ]
+ 
+  }
